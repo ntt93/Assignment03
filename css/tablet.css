@@ -1,0 +1,26 @@
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .container {
+    margin: auto 10px;
+    padding: 10px 10px;
+  }
+  .nav-home {
+    display: none;
+  }
+
+  .container-job-info {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  /* Chứng chỉ */
+
+  .item-cert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text-cert {
+    padding: 12px;
+    margin-left: none;
+  }
+}

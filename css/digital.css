@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: blue;
+  margin-left: 20px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.timeline-box {
+  grid-column: -2/-1;
+  grid-row: 1/-1;
+}
+
+.row {
+  align-items: center;
+}
+
+.icon-flag,
+.icon-user,
+.icon-question {
+  stroke: var(-dark);
+  width: 24px;
+  height: auto;
+}
+
+p.btn {
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  border: 1px solid #000;
+  background-color: blueviolet;
+  border-radius: 50%;
+}
+
+.container {
+  border-top: 1px solid gray;
+}
+
+.col-10 {
+  padding: 24px;
+}
+
+@media only screen and (max-width: 800px) {
+  .box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  /* .col-3 {
+    position: relative;
+  } */
+  p.btn {
+    position: relative;
+    left: -120%;
+  }
+  /* Điều chỉnh trật tự các hộp */
+  .goals-box {
+    grid-row: 1/2;
+  }
+  .team-box {
+    grid-row: 3/4;
+  }
+  .timeline-box {
+    grid-row: 5/6;
+  }
+  .scopes-box {
+    grid-row: 2/3;
+  }
+  .primary-box {
+    grid-row: 4/5;
+  }
+}

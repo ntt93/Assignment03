@@ -1,0 +1,52 @@
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin: auto 10px;
+    padding: 10px 10px;
+  }
+
+  .container-nav {
+    flex-direction: column;
+  }
+
+  .nav-home {
+    display: none;
+  }
+
+  .container-cert {
+    grid-template-columns: 1fr;
+  }
+
+  /* Chứng chỉ */
+  .item-cert {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #d6c08d;
+  }
+
+  .item-cert:first-child {
+    border-right: none;
+  }
+
+  .item-cert:last-child {
+    border-top: none;
+  }
+
+  /*  */
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .cointainer-footer {
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+  }
+
+  /* .item-cert:first-child {
+    border-right: none;
+  } */
+}
